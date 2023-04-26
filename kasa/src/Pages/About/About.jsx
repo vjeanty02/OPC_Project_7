@@ -1,12 +1,13 @@
 // About.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Banner from './../../Components/Banner/Banner';
+import Dropdown from './../../Components/Dropdown/Dropdown';
 
 export default function About() {
   return (
     <div className="About">
-      <h1>About</h1>
-      <Link to="/">Go to Home</Link>
+      <Banner/>
+      <Dropdown/>
     </div>
   );
 }

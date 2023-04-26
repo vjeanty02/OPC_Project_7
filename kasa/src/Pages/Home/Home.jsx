@@ -1,12 +1,21 @@
 // Home.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import Banner from "./../../Components/Banner/Banner";
+import Card from "./../../Components/Card/Card";
 
 function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
-      <Link to="/about">Go to About</Link>
+      <Banner/>
+      <div className="Container">
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
     </div>
   );
 }
