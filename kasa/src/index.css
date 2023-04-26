@@ -1,0 +1,11 @@
+body {
+    max-width: 1240px;
+    margin: auto;
+    padding: 40px 40px 0px 40px;
+}
+@media all and (min-width: 0px) and (max-width: 768px){
+    body
+    {
+      padding: 20px 20px 0px 20px;
+    }
+  }
