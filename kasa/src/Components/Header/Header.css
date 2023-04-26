@@ -35,7 +35,10 @@
 @media all and (min-width: 0px) and (max-width: 768px){
     .header__logo
     {
-      width: 145px;
+      
+      max-width: 145px;
+      width: 100%; 
+      height: auto;
     }
     .header__navbar {
         gap: 10px;
@@ -48,4 +51,22 @@
     
 }
 
+@media all and (min-width: 0px) and (max-width: 350px)
+{  
+    .header{
+        justify-content: center;
+        gap: 20px
+    }
+    .header__navbar
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__navbar__link 
+    {
+        margin: auto;
+    }
+
+}
 
