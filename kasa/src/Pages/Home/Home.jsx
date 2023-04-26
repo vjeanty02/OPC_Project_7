@@ -6,7 +6,7 @@ import Card from "./../../Components/Card/Card";
 
 function Home() {
   return (
-    <div className="Home">
+    <main className="Home">
       <Banner/>
       <div className="Container">
         <Card/>
@@ -16,7 +16,7 @@ function Home() {
         <Card/>
         <Card/>
       </div>
-    </div>
+    </main>
   );
 }
 export default Home;

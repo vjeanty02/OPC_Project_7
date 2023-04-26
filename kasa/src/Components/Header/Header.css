@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;   
+    fill: black;
 }
 .header__navbar {
     display: flex;
@@ -18,8 +19,6 @@
 }
 
 .header__navbar__link {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 142.6%;

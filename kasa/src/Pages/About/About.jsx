@@ -5,9 +5,9 @@ import Dropdown from './../../Components/Dropdown/Dropdown';
 
 export default function About() {
   return (
-    <div className="About">
+    <main className="About">
       <Banner/>
       <Dropdown/>
-    </div>
+    </main>
   );
 }
