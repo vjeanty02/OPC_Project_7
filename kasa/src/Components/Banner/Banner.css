@@ -1,0 +1,22 @@
+.banner{
+    position: relative; /* nécessaire pour utiliser z-index */
+    min-height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.banner::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("./../../../public/home_banner_img.png"); 
+    filter: brightness(70%);
+    z-index: -1; 
+    border-radius: 25px;
+}
+.banner__txt{
+    font-size: 48px;
+    line-height: 142.6%;
+    color: white;
+}

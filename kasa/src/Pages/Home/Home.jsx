@@ -1,13 +1,12 @@
 // Home.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 import Banner from "./../../Components/Banner/Banner";
 import Card from "./../../Components/Card/Card";
 
 function Home() {
   return (
     <main className="Home">
-      <Banner/>
+      <Banner txt="Chez vous, partout et ailleurs"/>
       <div className="Container">
         <Card/>
         <Card/>
