@@ -6,7 +6,7 @@ import Card from "./../../Components/Card/Card";
 function Home() {
   return (
     <main className="Home">
-      <Banner txt="Chez vous, partout et ailleurs"/>
+      <Banner txt="Chez vous, partout et ailleurs" page="home"/>
       <div className="Container">
         <Card/>
         <Card/>

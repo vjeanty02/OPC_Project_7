@@ -6,7 +6,7 @@ import Dropdown from './../../Components/Dropdown/Dropdown';
 export default function About() {
   return (
     <main className="About">
-      <Banner/>
+      <Banner txt="" page="about"/>
       <Dropdown/>
     </main>
   );

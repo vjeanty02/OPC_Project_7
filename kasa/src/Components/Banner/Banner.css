@@ -1,22 +1,36 @@
 .banner{
     position: relative; /* nécessaire pour utiliser z-index */
-    min-height: 225px;
     display: flex;
     align-items: center;
     justify-content: center; 
+    padding: 20px 30px;
 }
-
+.banner--home{
+    min-height: 225px;
+}
+.banner--about{
+    min-height: 225px;
+}
 .banner::before {
     content: ""; 
     position: absolute; 
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("./../../../public/home_banner_img.png"); 
     filter: brightness(70%);
     z-index: -1; 
     border-radius: 25px;
 }
+
+.banner--home::before {
+  background-image: url("./../../../public/home_banner_img.png"); /* image de fond pour la page home */
+}
+
+.banner--about::before {
+    background-image: url("./../../../public/about_banner_img.png"); /* image de fond pour la page about */
+}
+
 .banner__txt{
     font-size: 48px;
     line-height: 142.6%;
     color: white;
+    font-weight: 500;
 }
