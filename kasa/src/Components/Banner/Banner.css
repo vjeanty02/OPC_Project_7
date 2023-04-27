@@ -34,3 +34,16 @@
     color: white;
     font-weight: 500;
 }
+
+@media all and (min-width: 0px) and (max-width: 768px)
+{
+    .banner__txt{
+        font-size: 24px;
+    }
+    .banner::before{
+        border-radius: 10px;
+    }
+    .banner--home {
+        min-height: 111px;
+    }
+}
