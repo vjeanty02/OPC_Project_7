@@ -52,3 +52,15 @@
     transform: rotate(180deg);
   }
   
+@media all and (min-width: 0px) and (max-width: 768px){
+    .dropdown-button{
+        font-size: 13px;
+    }
+    .dropdown-item{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .dropdown-arrow {
+        width: 16px;
+    }
+}

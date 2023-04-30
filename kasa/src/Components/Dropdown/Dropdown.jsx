@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Dropdown.css";
 
-function Dropdown() {
+function Dropdown(props) {
   const [open, setOpen] = useState(false);
 
   function toggleDropdown() {
@@ -11,7 +11,7 @@ function Dropdown() {
   return (
     <div className="dropdown">
       <div className="dropdown-button" onClick={toggleDropdown}>
-        Fiabilité
+        {props.title}
         <img
           className={`dropdown-arrow ${open ? "open" : ""}`}
           src="/icone_dropdown.svg"
@@ -20,9 +20,7 @@ function Dropdown() {
       </div>
       <ul className="dropdown-list" style={{ display: open ? "block" : "none" }}>
         <p className="dropdown-item">
-          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-          comportement discriminatoire ou de perturbation du voisinage entraînera
-          une exclusion de notre plateforme.
+        {props.description}
         </p>
       </ul>
     </div>
