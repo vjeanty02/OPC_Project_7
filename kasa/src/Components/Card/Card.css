@@ -6,7 +6,7 @@
   align-items: end;
   color: white;
   text-decoration:none; 
-  position: relative; /* ajouté */
+  position: relative; 
 }
 
 .card__content__title
@@ -18,20 +18,20 @@
   width: 100px;
   text-shadow: none;
   text-decoration-color: white;
-  position: absolute; /* ajouté */
-  bottom: 0; /* ajouté */
-  left: 0; /* ajouté */
-  margin: 10px; /* ajouté */
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  margin: 10px;
   z-index: 2;
 }
 
 .card__image {
-    width: 100%; /* ajouté */
-    height: 100%; /* ajouté */
-    object-fit: cover; /* ajouté */
-    position: absolute; /* ajouté */
-    top: 0; /* ajouté */
-    left: 0; /* ajouté */
-    z-index: 1; /* ajouté */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
     border-radius: 10px;
 }

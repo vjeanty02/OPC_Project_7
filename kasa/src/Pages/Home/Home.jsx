@@ -1,4 +1,3 @@
-// Home.jsx
 import React from "react";
 import Banner from "./../../Components/Banner/Banner";
 import Card from "./../../Components/Card/Card";
