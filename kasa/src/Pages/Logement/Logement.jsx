@@ -1,13 +1,20 @@
-import React from "react";
-import Banner from '../../Components/Banner/Banner';
-import Dropdown from '../../Components/Dropdown/Dropdown';
-import LogementData  from "../../Data/dataAbout.json";
-import "./Logement.css"
+import data from "../../Data/dataLogement.json";
+import "./Logement.css";
+import Error from "../Error/Error";
 
-export default function Logement() {
+import { useParams } from "react-router-dom";
+
+function Logement() {
+  const { id } = useParams();
+  const logement = data.find((item) => item.id === id);
+  if (!logement) return <Error />;
+
+  const { title, description, pictures, equipments } = logement;
+
   return (
-    <main className="logement">
-      <Banner txt="tt" page="about"/>
-    </main>
+    <div className="main">   
+    </div>
   );
 }
+
+export default Logement;

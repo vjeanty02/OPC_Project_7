@@ -2,9 +2,9 @@ import React from "react";
 import "./Card.css"
 import { Link } from "react-router-dom";
 
-function Card({ title, cover }) {
+function Card({ title, cover, id }) {
   return (
-    <Link className="card">
+    <Link className="card" to={"/logement/" + id}>
       <div className="card__content">
         <h3 className="card__content__title">{title}</h3>
       </div>
