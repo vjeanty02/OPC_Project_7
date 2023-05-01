@@ -5,12 +5,6 @@
     justify-content: center; 
     padding: 20px 30px;
 }
-.banner--home{
-    min-height: 225px;
-}
-.banner--about{
-    min-height: 225px;
-}
 .banner::before {
     content: ""; 
     position: absolute; 
@@ -19,11 +13,15 @@
     z-index: -1; 
     border-radius: 25px;
 }
-
-.banner--home::before {
-  background-image: url("./../../../public/home_banner_img.png"); /* image de fond pour la page home */
+.banner--home{
+    min-height: 225px;
 }
-
+.banner--home::before {
+    background-image: url("./../../../public/home_banner_img.png"); /* image de fond pour la page home */
+  }
+.banner--about{
+    min-height: 225px;
+}
 .banner--about::before {
     background-image: url("./../../../public/about_banner_img.png"); /* image de fond pour la page about */
 }

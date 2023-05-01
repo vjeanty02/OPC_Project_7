@@ -7,6 +7,10 @@
   color: white;
   text-decoration:none; 
   position: relative; 
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card__content__title
@@ -15,14 +19,14 @@
   font-size: 18px;
   line-height: 142.6%;
   color: white;
-  width: 100px;
+
   text-shadow: none;
   text-decoration-color: white;
   position: absolute; 
   bottom: 0; 
   left: 0;
-  margin: 10px;
-  z-index: 2;
+  padding: 20px;
+  z-index: 3;
 }
 
 .card__image {
@@ -34,4 +38,12 @@
     left: 0; 
     z-index: 1; 
     border-radius: 10px;
+}
+
+.card__image {
+  filter: brightness(70%);
+  transition: all 0.3s;
+}
+.card:hover .card__image {
+  filter: brightness(90%);
 }

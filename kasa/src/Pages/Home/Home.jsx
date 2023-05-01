@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./../../Components/Banner/Banner";
 import Card from "./../../Components/Card/Card";
-import LogementData  from "../../Data/dataLogement.json";
+import HomeData  from "../../Data/dataLogement.json";
 
 import './Home.css';
 
@@ -10,9 +10,9 @@ function Home() {
     <main className="Home">
       <Banner txt="Chez vous, partout et ailleurs" page="home"/>
       <div className="home__container">
-        {LogementData.map((logementData) => {
+        {HomeData.map((homeData) => {
           return (
-            <Card className="card" key={logementData.id} title = {logementData.title} cover = {logementData.cover} />
+            <Card className="card" key={homeData.id} title = {homeData.title} cover = {homeData.cover} />
         );})}
         
       </div>
