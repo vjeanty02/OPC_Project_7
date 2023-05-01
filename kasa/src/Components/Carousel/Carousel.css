@@ -4,12 +4,12 @@
   margin: 0 auto;
 }
 
-.carousel img {
+.carousel__img {
   width: 100%;
   height: auto;
 }
 
-.carousel button {
+.carousel__button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -20,9 +20,9 @@
   cursor: pointer;
 }
 
-.carousel .prev {
+.carousel__button--prev {
   left: 10px;
 }
-.carousel .next {
+.carousel__button--next {
   right: 10px;
 }

@@ -10,16 +10,16 @@ function Dropdown(props) {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-button" onClick={toggleDropdown}>
+      <div className="dropdown__button" onClick={toggleDropdown}>
         {props.title}
         <img
-          className={`dropdown-arrow ${open ? "open" : ""}`}
+          className={`dropdown__button__arrow ${open ? "open" : ""}`}
           src="/icone_dropdown.svg"
           alt="icone_dropdown"
         />
       </div>
-      <ul className="dropdown-list" style={{ display: open ? "block" : "none" }}>
-        <p className="dropdown-item">
+      <ul className="dropdown__list" style={{ display: open ? "block" : "none" }}>
+        <p className="dropdown__list__item">
         {props.description}
         </p>
       </ul>

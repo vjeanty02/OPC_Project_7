@@ -18,11 +18,11 @@ function Carousel({ photos }) {
 
   return (
     <div className="carousel">
-      <img src={photos[index]} alt={`Photo ${index + 1} du logement`} />
-      <button className="prev" onClick={prevSlide} >
+      <img className="carousel__img" src={photos[index]} alt={`Photo ${index + 1} du logement`} />
+      <button className="carousel__button carousel__button--prev" onClick={prevSlide} >
         &lt;
       </button>
-      <button className="next" onClick={nextSlide} >
+      <button className="ccarousel__button carousel__button--next" onClick={nextSlide} >
         &gt;
       </button>
     </div>

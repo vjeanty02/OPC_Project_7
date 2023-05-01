@@ -1,47 +1,6 @@
 /* Style du conteneur principal */
 .main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
-  }
-  
-  /* Style du titre */
-  .main h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: #ff6060;
-    margin-top: 20px;
-  }
-  
-  /* Style du paragraphe */
-  .main p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    color: #333333;
-    margin-top: 10px;
-  }
-  
-  /* Style de la liste */
-  .main ul {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    color: #333333;
-    margin-top: 10px;
-  }
-  
-  /* Style des éléments de la liste */
-  .main li {
-    list-style-type: none;
-  }
-  
-  /* Style des éléments de la liste avec un rond rouge */
-  .main li::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ff6060;
-    margin-right: 10px;
   }
