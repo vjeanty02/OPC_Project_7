@@ -1,4 +1,5 @@
 import data from "../../Data/dataLogement.json";
+import Carousel from "../../Components/Carousel/Carousel";
 import "./Logement.css";
 import Error from "../Error/Error";
 
@@ -12,7 +13,9 @@ function Logement() {
   const { title, description, pictures, equipments } = logement;
 
   return (
-    <div className="main">   
+    <div className="main">
+      <Carousel photos={pictures} />
+     
     </div>
   );
 }

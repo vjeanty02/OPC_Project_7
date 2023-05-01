@@ -1,0 +1,28 @@
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+.carousel .next {
+  right: 10px;
+}
