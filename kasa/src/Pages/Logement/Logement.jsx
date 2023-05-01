@@ -2,8 +2,8 @@ import data from "../../Data/dataLogement.json";
 import Carousel from "../../Components/Carousel/Carousel";
 import "./Logement.css";
 import Error from "../Error/Error";
-
 import { useParams } from "react-router-dom";
+import Dropdown from './../../Components/Dropdown/Dropdown';
 
 function Logement() {
   const { id } = useParams();
@@ -15,7 +15,8 @@ function Logement() {
   return (
     <main className="logement">
       <Carousel photos={pictures} />
-     
+      <Dropdown title="Description" content = {description} />
+      <Dropdown title="Equipements" content = {equipments} />
     </main>
   );
 }

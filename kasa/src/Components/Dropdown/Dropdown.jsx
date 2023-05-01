@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Dropdown.css";
 
 function Dropdown(props) {
+  // Utiliser un état pour gérer l'ouverture/fermeture du menu déroulant
   const [open, setOpen] = useState(false);
 
+  // Créer une fonction pour basculer l'état du menu déroulant
   function toggleDropdown() {
     setOpen((prevOpen) => !prevOpen);
   }
@@ -19,9 +21,15 @@ function Dropdown(props) {
         />
       </div>
       <ul className="dropdown__list" style={{ display: open ? "block" : "none" }}>
-        <p className="dropdown__list__item">
-        {props.description}
-        </p>
+        {Array.isArray(props.content) ? (
+          props.content.map((item, index) => (
+            <li className="dropdown__list__item" key={index}>
+              {item}
+            </li>
+          ))
+        ) : (
+          <li className="dropdown__list__item">{props.content}</li>
+        )}
       </ul>
     </div>
   );

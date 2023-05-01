@@ -25,7 +25,7 @@ function Carousel({ photos }) {
   return (
     <div className="carousel">
       <img className="carousel__img" src={photos[index]} alt={`Photo ${index + 1} du logement`} />
-      {photos.length > 1 && (
+      {(photos.length > 1) && (
         <>
           <button className="carousel__button carousel__button--prev" onClick={prevSlide}>
             <img src="/icone_carousel_prev.svg" alt="icone_carousel_prev" />
