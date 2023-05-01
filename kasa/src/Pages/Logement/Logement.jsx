@@ -13,10 +13,10 @@ function Logement() {
   const { title, description, pictures, equipments } = logement;
 
   return (
-    <div className="main">
+    <main className="logement">
       <Carousel photos={pictures} />
      
-    </div>
+    </main>
   );
 }
 
