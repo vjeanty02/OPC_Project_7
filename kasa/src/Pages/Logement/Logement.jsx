@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Dropdown from './../../Components/Dropdown/Dropdown';
 import TagName from './../../Components/TagName/TagName';
 import Host from './../../Components/Host/Host';
+import Stars from '../../Components/Stars/Stars';
 
 
 function Logement() {
@@ -13,7 +14,7 @@ function Logement() {
   const logement = data.find((item) => item.id === id);
   if (!logement) return <Error />;
 
-  const { title, description, pictures, equipments, tags, location, host } = logement;
+  const { title, description, pictures, equipments, tags, location, host, rating } = logement;
 
   return (
     <main className="logement">
@@ -21,6 +22,7 @@ function Logement() {
       <h1 className="logement__title">{title}</h1>
       <h2 className="logement__location">{location}</h2>
       <TagName tags={tags} />
+      <Stars rating={rating}/>
       <Host name={host.name} picture={host.picture}/>
       <Dropdown title="Description" content = {description} page="logement"/>
       <Dropdown title="Equipements" content = {equipments} page="logement"/>
