@@ -15,8 +15,8 @@ function Logement() {
   return (
     <main className="logement">
       <Carousel photos={pictures} />
-      <Dropdown title="Description" content = {description} />
-      <Dropdown title="Equipements" content = {equipments} />
+      <Dropdown title="Description" content = {description} page="logement"/>
+      <Dropdown title="Equipements" content = {equipments} page="logement"/>
     </main>
   );
 }

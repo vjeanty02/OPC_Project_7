@@ -10,7 +10,7 @@ export default function About() {
       <Banner txt="" page="about"/>
       {AboutData.map((aboutData) => {
         return (
-          <Dropdown className="dropdown" key={aboutData.title} title={aboutData.title} description={aboutData.description} />
+          <Dropdown className="dropdown" key={aboutData.title} title={aboutData.title} content={aboutData.description} page="about"/>
       );})}
     </main>
   );
