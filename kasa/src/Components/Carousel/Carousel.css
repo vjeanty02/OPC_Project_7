@@ -28,16 +28,16 @@
   opacity: 0.5;
   cursor: pointer;
 }
-
+.carousel__button:hover {
+  opacity: 1;
+}
 .carousel__button--prev {
   left: 10px;
 }
 .carousel__button--next {
   right: 10px;
 }
-.carousel__button:hover {
-  opacity: 1;
-}
+
 
 @media all and (min-width: 0px) and (max-width: 768px)
 {

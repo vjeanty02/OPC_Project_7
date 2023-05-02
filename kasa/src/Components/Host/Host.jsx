@@ -8,8 +8,10 @@ function Host({name, picture }) {
 
   return (
     <div className="host">
-      <p className="host__name host__name--firstName">{firstName}</p>
-      <p className="host__name host__name--lastName">{lastName}</p>
+      <div>
+        <p className="host__name host__name--firstName">{firstName}</p>
+        <p className="host__name host__name--lastName">{lastName}</p>
+      </div>
       <img src={picture} alt={name} className="host__picture" />
     </div>
   );

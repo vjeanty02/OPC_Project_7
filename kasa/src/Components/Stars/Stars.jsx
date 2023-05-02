@@ -6,11 +6,11 @@ const stars = [];
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
       stars.push(<span className="star star--full" key={i}>
-        <img src="/icone_rating.svg" alt="icone_rating" />
+        <img className="star__icone" src="/icone_rating.svg" alt="icone_rating" />
       </span>);
     } else {
       stars.push(<span className="star star--empty" key={i}>
-        <img src="/icone_rating_empty.svg" alt="icone_rating"/>
+        <img className="star__icone" src="/icone_rating_empty.svg" alt="icone_rating"/>
       </span>);
     }
   }

@@ -7,6 +7,8 @@ import Dropdown from './../../Components/Dropdown/Dropdown';
 import TagName from './../../Components/TagName/TagName';
 import Host from './../../Components/Host/Host';
 import Stars from '../../Components/Stars/Stars';
+import  React  from 'react';
+
 
 
 function Logement() {
@@ -19,13 +21,25 @@ function Logement() {
   return (
     <main className="logement">
       <Carousel photos={pictures} />
-      <h1 className="logement__title">{title}</h1>
-      <h2 className="logement__location">{location}</h2>
-      <TagName tags={tags} />
-      <Stars rating={rating}/>
-      <Host name={host.name} picture={host.picture}/>
-      <Dropdown title="Description" content = {description} page="logement"/>
-      <Dropdown title="Equipements" content = {equipments} page="logement"/>
+
+      <div className="flex-between">
+        <div>
+          <h1 className="logement__title">{title}</h1>
+          <h2 className="logement__location">{location}</h2>
+          <TagName className="logement__tagName" tags={tags} />
+        </div>
+        
+        <div className="flex-reverse">
+          <Host className="logement__host" name={host.name} picture={host.picture}/>
+          <Stars className="logement__rating" rating={rating}/>
+        </div>
+      </div>
+
+      <div className="flex">
+        <Dropdown className="logement__dropdownDescription" title="Description" content = {description} page="logement"/>
+        <Dropdown className="logement__dropdownEquipements" title="Equipements" content = {equipments} page="logement"/>
+      </div>
+      
     </main>
   );
 }

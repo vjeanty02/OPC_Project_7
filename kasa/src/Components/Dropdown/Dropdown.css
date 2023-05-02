@@ -10,13 +10,15 @@
   justify-content: space-between;
   align-items: center;
   border: 0px solid black;
-  padding: 5px 10px;
+  padding-left:20px;
+  padding-right:10px;
   background: #FF6060;
   color: white;
-  border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   line-height: 142.6%;
+  height: 50px;
+  border-radius: 10px;
 }
 .dropdown__button__arrow {
   margin-left: 10px;
@@ -25,7 +27,8 @@
   list-style: none;
   margin: 0;
   margin-top: -10px;
-  padding: 0;
+  padding-top: 15px;
+  padding-bottom:10px;
   border: 0px solid black;
   display: none;
   background: #F7F7F7;
@@ -33,7 +36,8 @@
   z-index: -1;
 } 
 .dropdown__list__item {
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 142.6%;
@@ -65,6 +69,8 @@
 @media all and (min-width: 0px) and (max-width: 768px){
   .dropdown__button--about{
     font-size: 14px;
+    height: 30px;
+    border-radius: 5px;
   }
   .dropdown__button__arrow--about {
     width: 16px;
@@ -82,7 +88,7 @@
   font-size: 18px;
 }
 .dropdown__button__arrow--logement {
-  width: 14px;
+  width: 18px;
 }
 .dropdown__list__item--logement {
   font-size: 18px;
@@ -90,9 +96,11 @@
 @media all and (min-width: 0px) and (max-width: 768px){
   .dropdown__button--logement{
     font-size: 13px;
+    height: 30px;
+    border-radius: 5px;
   }
   .dropdown__button__arrow--logement {
-    width: 16px;
+    width: 14px;
   }
   .dropdown__list__item--logement {
     font-size: 12px;
