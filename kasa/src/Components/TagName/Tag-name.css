@@ -14,4 +14,19 @@
     border-radius: 10px;
     font-weight: 500;
     line-height: 142.6%;
+    min-width: 115px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .tagName {
+        justify-content: center;
+    }
+
+    .tag {
+        font-size: 10px;
+        padding: 3px 6px;
+        border-radius: 5px;
+        min-width: 84px;
+    }
 }
