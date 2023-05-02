@@ -1,0 +1,17 @@
+.tagName__container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 142.6%;
+}

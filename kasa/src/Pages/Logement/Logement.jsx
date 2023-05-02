@@ -11,14 +11,15 @@ function Logement() {
   const logement = data.find((item) => item.id === id);
   if (!logement) return <Error />;
 
-  const { title, description, pictures, equipments } = logement;
+  const { title, description, pictures, equipments, tags } = logement;
 
   return (
     <main className="logement">
       <Carousel photos={pictures} />
+      <TagName tags={tags} />
       <Dropdown title="Description" content = {description} page="logement"/>
       <Dropdown title="Equipements" content = {equipments} page="logement"/>
-      <TagName/>
+      
     </main>
   );
 }
