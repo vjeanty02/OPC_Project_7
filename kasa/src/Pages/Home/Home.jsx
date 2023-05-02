@@ -7,7 +7,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <main className="Home">
+    <main className="home">
       <Banner txt="Chez vous, partout et ailleurs" page="home"/>
       <div className="home__container">
         {HomeData.map((homeData) => {
