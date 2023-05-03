@@ -9,13 +9,13 @@ function Home() {
   return (
     <main className="home">
       <Banner txt="Chez vous, partout et ailleurs" page="home"/>
-      <div className="home__container">
+      <section className="home__container">
         {HomeData.map((homeData) => {
           return (
             <Card className="card" key={homeData.id} id={homeData.id} title = {homeData.title} cover = {homeData.cover} />
         );})}
         
-      </div>
+      </section>
     </main>
   );
 }

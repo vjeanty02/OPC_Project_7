@@ -23,7 +23,7 @@ function Carousel({ photos }) {
   }
 
   return (
-    <div className="carousel">
+    <section className="carousel">
       <img className="carousel__img" src={photos[index]} alt={`Photo ${index + 1} du logement`} />
       {(photos.length > 1) && (
         <>
@@ -35,7 +35,7 @@ function Carousel({ photos }) {
           </button>
         </>
       )}
-    </div>
+    </section>
   );
 }
 
