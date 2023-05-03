@@ -2,7 +2,7 @@
   display: flex;
   flex: 1 0 calc(33.33% - 50px);
   min-height:340px ;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   align-items: end;
   color: white;
   text-decoration:none; 
@@ -11,6 +11,7 @@
 }
 .card:hover {
   transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .card__content__title

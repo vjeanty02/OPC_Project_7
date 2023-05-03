@@ -17,6 +17,13 @@
     min-width: 115px;
     display: flex;
     justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.tag:hover {
+    filter: brightness(92%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
 }
 @media (max-width: 768px) {
     .tagName {

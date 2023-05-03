@@ -15,12 +15,12 @@ function Dropdown(props) {
       <div className={"dropdown__button dropdown__button--" + props.page} onClick={toggleDropdown}>
         {props.title}
         <img
-          className={`dropdown__button__arrow dropdown__button__arrow--${props.page} dropdown__button__arrow--${open ? "open" : ""}`}
+          className={`dropdown__button__arrow dropdown__button__arrow--${props.page} dropdown__button__arrow--${open ? "open" : "close"}`}
           src="/icone_dropdown.svg"
           alt="icone_dropdown"
         />
       </div>
-      <ul className="dropdown__list" style={{ display: open ? "block" : "none" }}>
+      <ul className={`dropdown__list dropdown__list--${open ? "open" : "close"}`}>
         {Array.isArray(props.content) ? (
           props.content.map((item, index) => (
             <li className={"dropdown__list__item dropdown__list__item--"+props.page} key={index}>

@@ -50,4 +50,8 @@
       border-radius: 10px;
       Width : 12px
     }
+    .carousel__img
+    {
+      border-radius: 10px;
+    }
 }
