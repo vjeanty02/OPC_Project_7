@@ -8,8 +8,8 @@ function Header() {
         <header className="header">
             <img className="header__logo" src="/logo.svg" alt="Logo" />
             <nav className="header__navbar">
-                <NavLink className="header__navbar__link" to="/">Accueil</NavLink>
-                <NavLink className="header__navbar__link" to="/about">A propos</NavLink>
+                <NavLink className={state => state.isActive ? "header__navbar__link active" : "header__navbar__link"} to="/">Accueil</NavLink>
+                <NavLink className={state => state.isActive ? "header__navbar__link active" : "header__navbar__link"} to="/about">A propos</NavLink>
             </nav>
         </header>
     )

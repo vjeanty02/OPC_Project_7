@@ -7,10 +7,10 @@
   color: white;
   text-decoration:none; 
   position: relative; 
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
@@ -40,7 +40,7 @@
   z-index: 1; 
   border-radius: 10px;
   filter: brightness(70%);
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .card:hover .card__image {
