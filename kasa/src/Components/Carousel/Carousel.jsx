@@ -1,4 +1,3 @@
-// Importer React et les hooks
 import React, { useState, useEffect } from "react";
 
 import "./Carousel.css"
@@ -7,7 +6,6 @@ function Carousel({ photos }) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    // Vérifier s'il y a plus d'une photo avant de créer l'intervalle
     if (photos.length > 1) {
       const interval = setInterval(nextSlide, 5000);
       return () => clearInterval(interval);
@@ -33,6 +31,9 @@ function Carousel({ photos }) {
           <button className="carousel__button carousel__button--next" onClick={nextSlide}>
             <img src="/icone_carousel_next.svg" alt="icone_carousel_next" />
           </button>
+          <p className="carousel__counter">
+            {index + 1} / {photos.length}
+          </p>
         </>
       )}
     </section>

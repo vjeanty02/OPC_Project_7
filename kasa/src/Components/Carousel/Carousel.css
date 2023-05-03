@@ -1,6 +1,5 @@
 .carousel {
   position: relative;
-  /* Positionner le carousel au centre de la page */
   margin: 0 auto;
   height: 415px;
 }
@@ -15,7 +14,15 @@
   border-radius: 25px;
   transition: all 0.3s;
 }
-
+.carousel__counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  z-index: 1000;
+}
 .carousel__button {
   position: absolute;
   top: 50%;
