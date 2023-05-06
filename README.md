@@ -16,7 +16,7 @@ Ce projet utilise les technologies suivantes:
 Pour installer et exécuter ce projet, vous devez 
 
 1. Cloner d'abord le projet
-2. Ouvrir le dossier dans un terminal et lancer les commandes `cd Kasa`, `npm install` et `npm start`
+2. Ouvrir le dossier dans un terminal et lancer les commandes `cd kasa`, `npm install` et `npm start`
 3. Ouvrir un navigateur, aller sur `http://localhost:5173/`
 
 
